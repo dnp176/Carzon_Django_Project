@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-*^ru^j#e5jbnm*tex-9)6er(_jh)4rc!i)ar818-pxc=aq1na&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['git.heroku.com/dnpcarzon.git','localhost']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -127,7 +127,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'static'
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') 
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'carzone/static')
 ]

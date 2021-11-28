@@ -1,1 +1,1 @@
-web: gunicorn Carzon_Project.wsgi --log -
+web: gunicorn carzon.wsgi --log -
