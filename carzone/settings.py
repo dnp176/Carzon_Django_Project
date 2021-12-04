@@ -26,6 +26,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 DEBUG = True
 
 ALLOWED_HOSTS = ["carzonpro.herokuapp.com","localhost"]
+# ALLOWED_HOSTS = []
 
 
 # Application definition
