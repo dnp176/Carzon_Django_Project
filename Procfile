@@ -1,1 +1,1 @@
-web: gunicorn carzon.wsgi --log -
+web: waitress-serve --port=$PORT carzone.wsgi:application
