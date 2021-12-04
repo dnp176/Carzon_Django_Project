@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-*^ru^j#e5jbnm*tex-9)6er(_jh)4rc!i)ar818-pxc=aq1na&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://dnpcarzon.herokuapp.com/']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -78,26 +78,26 @@ WSGI_APPLICATION = 'carzone.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'carzon_db',
-#         'USER': 'postgres',
-#         'PASSWORD': 'admin',
-#         'HOST': 'localhost',
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'postgres://evlwyyccldntic:edf70677575a1fc12cde642e00c66567d5b93037f0b000917faa50c76aeed942@ec2-18-213-133-45.compute-1.amazonaws.com:5432/d750gvkjh6vnv1',
-        'NAME': 'd750gvkjh6vnv1',
-        'USER': 'evlwyyccldntic',
-        'PASSWORD': 'edf70677575a1fc12cde642e00c66567d5b93037f0b000917faa50c76aeed942',
-        'HOST': 'ec2-18-213-133-45.compute-1.amazonaws.com',
-        'PORT':'5432',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'carzon_db',
+        'USER': 'postgres',
+        'PASSWORD': 'admin',
+        'HOST': 'localhost',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'postgres://evlwyyccldntic:edf70677575a1fc12cde642e00c66567d5b93037f0b000917faa50c76aeed942@ec2-18-213-133-45.compute-1.amazonaws.com:5432/d750gvkjh6vnv1',
+#         'NAME': 'd750gvkjh6vnv1',
+#         'USER': 'evlwyyccldntic',
+#         'PASSWORD': 'edf70677575a1fc12cde642e00c66567d5b93037f0b000917faa50c76aeed942',
+#         'HOST': 'ec2-18-213-133-45.compute-1.amazonaws.com',
+#         'PORT':'5432',
+#     }
+# }
 
 # import dj_database_url
 # db_from_env = dj_database.url.config(conn_max_age=600)
