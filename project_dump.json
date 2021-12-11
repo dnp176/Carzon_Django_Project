@@ -210,7 +210,7 @@
         "first_name": "Dhruv N",
         "last_name": "Patel",
         "designation": "Creative Director",
-        "photo": "photos/2021/11/18/dhruv.jpeg",
+        "photo": "photos/2021/12/11/boys.png",
         "facebook_link": "http://facebook.com",
         "twitter_link": "http://twitter.com",
         "google_plus_link": "http://google.com",
@@ -224,7 +224,7 @@
         "first_name": "Akash V",
         "last_name": "Patel",
         "designation": "Business Developer",
-        "photo": "photos/2021/11/18/boys.png",
+        "photo": "photos/2021/12/11/boys_pIb3zyx.png",
         "facebook_link": "http://facebook.com",
         "twitter_link": "http://twitter.com",
         "google_plus_link": "http://google.com",
@@ -238,7 +238,7 @@
         "first_name": "Vidhi N",
         "last_name": "Patel",
         "designation": "Founder",
-        "photo": "photos/2021/11/18/girls_2DNN5P7.png",
+        "photo": "photos/2021/12/11/girls.png",
         "facebook_link": "http://facebook.com",
         "twitter_link": "http://twitter.com",
         "google_plus_link": "http://google.com",
@@ -252,7 +252,7 @@
         "first_name": "Anjali V",
         "last_name": "Patel",
         "designation": "Business Support",
-        "photo": "photos/2021/11/18/girls_nMDYBm2.png",
+        "photo": "photos/2021/12/11/girls_LRRdaVs.png",
         "facebook_link": "http://facebook.com",
         "twitter_link": "http://twitter.com",
         "google_plus_link": "http://google.com",
@@ -266,7 +266,7 @@
         "first_name": "Vrunda A",
         "last_name": "Patel",
         "designation": "Co-Founder",
-        "photo": "photos/2021/11/18/girls.png",
+        "photo": "photos/2021/12/11/girls_WwUz8n7.png",
         "facebook_link": "http://facebook.com",
         "twitter_link": "http://twitter.com",
         "google_plus_link": "http://google.com",
@@ -295,7 +295,7 @@
     "model": "auth.user",
     "fields": {
         "password": "pbkdf2_sha256$260000$FLSqNQ1AS1tgTIaGr1ppzY$S2EHsuCZgIMI10vKoO+gviNr1VL8hRwZHjPHI1g13A8=",
-        "last_login": "2021-12-11T11:22:26.029Z",
+        "last_login": "2021-12-11T17:27:20.422Z",
         "is_superuser": true,
         "username": "admin",
         "first_name": "Dhruv-Admin",
@@ -381,6 +381,14 @@
     "fields": {
         "session_data": ".eJxVjMEOgjAQRP-lZ9MstEtbj975hmbLdgU1NKFwMv67kHDQ48x7M28VaVvHuNW8xInVVTXq8tslGp55PgA_aL4XPZR5XaakD0WftOq-cH7dTvfvYKQ67msMCbHDBCKJoGFrQMAG4j0ZCCJOXEceEw-2ZQAHzhnyEpCxtb5Tny_mejef:1mw0SQ:YYTHyN5XtMsY6Xbwi7eSPtDJRkZ8wtYx4IA4crarga8",
         "expire_date": "2021-12-25T11:22:26.031Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "rvzvkiyog5vidw49ddu5bm3akuai2nm0",
+    "fields": {
+        "session_data": ".eJxVjMEOgjAQRP-lZ9MstEtbj975hmbLdgU1NKFwMv67kHDQ48x7M28VaVvHuNW8xInVVTXq8tslGp55PgA_aL4XPZR5XaakD0WftOq-cH7dTvfvYKQ67msMCbHDBCKJoGFrQMAG4j0ZCCJOXEceEw-2ZQAHzhnyEpCxtb5Tny_mejef:1mw69Y:HKcpqOm1d8AKGqJ0kTtFbsbsvoS8wH8kaJZ8Ex9FRfw",
+        "expire_date": "2021-12-25T17:27:20.431Z"
     }
 },
 {
@@ -1568,6 +1576,96 @@
         "object_repr": "dnp176",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"Email address\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+        "action_time": "2021-12-11T17:28:29.403Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "team"
+        ],
+        "object_id": "3",
+        "object_repr": "Dhruv N",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+        "action_time": "2021-12-11T17:28:36.996Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "team"
+        ],
+        "object_id": "4",
+        "object_repr": "Akash V",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+        "action_time": "2021-12-11T17:28:44.106Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "team"
+        ],
+        "object_id": "5",
+        "object_repr": "Vidhi N",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+        "action_time": "2021-12-11T17:28:51.144Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "team"
+        ],
+        "object_id": "6",
+        "object_repr": "Anjali V",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+        "action_time": "2021-12-11T17:28:57.499Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "team"
+        ],
+        "object_id": "7",
+        "object_repr": "Vrunda A",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
     }
 }
 ]
