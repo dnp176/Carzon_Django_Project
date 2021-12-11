@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-*^ru^j#e5jbnm*tex-9)6er(_jh)4rc!i)ar818-pxc=aq1na&/'
 # SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # ALLOWED_HOSTS = ["carzonpro.herokuapp.com","localhost"]
 ALLOWED_HOSTS = []
@@ -91,15 +91,16 @@ WSGI_APPLICATION = 'carzone.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'carzon_db',
-        'USER': 'postgres',
-        'PASSWORD': 'admin',
-        'HOST': 'localhost',
-    }
-}
+#Local Database information
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'carzon_db',
+#         'USER': 'postgres',
+#         'PASSWORD': 'admin',
+#         'HOST': 'localhost',
+#     }
+# }
 
 # DATABASES = {
 #     'default': {
@@ -112,9 +113,11 @@ DATABASES = {
 #     }
 # }
 
-import dj_database_url
-db_from_env = dj_database_url.config(conn_max_age=600)
-DATABASES['default'].update(db_from_env)
+# import dj_database_url
+# db_from_env = dj_database_url.config(conn_max_age=600)
+# DATABASES['default'].update(db_from_env)
+
+DATABASES = {'default': dj_database_url.config(default='postgres://postgres:admin@localhost/carzon_db')}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -182,3 +185,6 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'dnp17620@gmail.com'
 EMAIL_HOST_PASSWORD = 'xhcrdprojmangvsv'
 EMAIL_USE_TLS = True
+
+#whitenoise settings
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage';
