@@ -1,1 +1,2 @@
-web: waitress-serve --port=$PORT carzone.wsgi:application
+release: python manage.py migrate
+web: gunicorn carzone.wsgi
