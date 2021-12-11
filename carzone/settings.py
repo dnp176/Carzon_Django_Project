@@ -177,7 +177,7 @@ MESSAGE_TAGS = {
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-SITE_ID = 1
+SITE_ID = 2
 
 #Email Sending
 EMAIL_HOST = 'smtp.gmail.com'
