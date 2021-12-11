@@ -50,17 +50,16 @@ def contact(request):
         email_subject = 'You have a new message from Carzone website regarding ' + subject
         message_body =  'Name: ' + name + '. Email: ' + email + '. Phone: ' + phone + '. Message: ' + message
 
-        admin_info = User.objects.get(is_superuser=True)
-        admin_email = admin_info.email
+        # admin_info = User.objects.get(is_superuser=True)
+        # admin_email = admin_info.email
 
         send_mail(
             email_subject,
             message_body,
-            email, #From Email Address
-            [admin_email], #To Email Address
+            email,
+            ['dnp176.developer@gmail.com'],
             fail_silently=False,
         )
-
         messages.success(request,'Your message has been successfully send')
         return redirect('contact')
     return render(request,'pages/contact.html')

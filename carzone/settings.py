@@ -182,8 +182,8 @@ SITE_ID = 2
 #Email Sending
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'dnp17620@gmail.com'
-EMAIL_HOST_PASSWORD = 'xhcrdprojmangvsv'
+EMAIL_HOST_USER = 'dnp176.developer@gmail.com'
+EMAIL_HOST_PASSWORD = 'npvorackhgscvckc'
 EMAIL_USE_TLS = True
 
 #whitenoise settings
