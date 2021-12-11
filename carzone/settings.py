@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-*^ru^j#e5jbnm*tex-9)6er(_jh)4rc!i)ar818-pxc=aq1na&/'
 # SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["carzonpro.herokuapp.com","localhost"]
 # ALLOWED_HOSTS = []
