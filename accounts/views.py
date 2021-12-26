@@ -3,7 +3,9 @@ from django.contrib import messages, auth
 from django.contrib.auth.models import User
 from contacts.models import Contact
 from django.contrib.auth.decorators import login_required
+from loguru import logger
 # Create your views here.
+logger.add("log/login_log.log",level="TRACE",rotation="100 MB")
 def login(request):
     if request.method == 'POST':
         username = request.POST['username']
@@ -14,8 +16,10 @@ def login(request):
         if user is not None:
             auth.login(request,user)
             messages.success(request,'You are logged in.')
+            logger.success("login Success-" + username)
             return redirect('dashboard')
         else:
+            logger.error("login Fail-" + username)
             messages.error(request,'Invalid login credentials')
             return redirect('login')
     return render(request,'accounts/login.html')
@@ -53,6 +57,7 @@ def register(request):
                     return redirect('dashboard')
                     user.save()
                     messages.success(request,'You are successfully registered')
+                    logger.success("Registered Success-" + username + '-' + email)
                     return redirect('login')
 
         else:
